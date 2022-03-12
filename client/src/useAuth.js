@@ -6,6 +6,7 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState()
   const [expiresIn, setExpiresIn] = useState()
 
+  //Logs in to SpotifyApi
   useEffect(() => {
     axios
       .post("http://localhost:3001/login", {
@@ -22,6 +23,7 @@ export default function useAuth(code) {
       })
   }, [code])
 
+  //Refreshs AccessToken
   useEffect(() => {
     if (!refreshToken || !expiresIn) return
     const interval = setInterval(() => {

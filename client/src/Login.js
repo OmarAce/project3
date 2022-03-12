@@ -4,6 +4,7 @@ import content from "./content/index.js"
 import Typical from 'react-typical';
 import Hero from './Hero'
 
+//OAuth Call to Local Host
 const AUTH_URL =
   "https://accounts.spotify.com/authorize?client_id=a8c25ab3bd1e48f6a93154cf69c1d709&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
 
